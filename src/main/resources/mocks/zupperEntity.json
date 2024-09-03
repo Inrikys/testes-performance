@@ -1,0 +1,16 @@
+{
+  "nome": "teste",
+  "sobrenome": "teste",
+  "dataNascimento": "1995-08-11",
+  "celular": "11941008241",
+  "endereco": {
+    "cep": "09990-080",
+    "numero": "459",
+    "logradouro": "Avenida Doutor Ulysses Guimarães",
+    "complemento": "de 2800/2801 ao fim",
+    "bairro": "Vila Nogueira",
+    "localidade": "Diadema",
+    "uf": "SP"
+  },
+  "email": "henrique661@gmail.com"
+}
