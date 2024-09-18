@@ -4,12 +4,11 @@
 - [x] Criar endpoint de cadastrar
 - [x] Criar endpoint de buscar lista paginada
 - [x] Criar endpoint de detalhar
-- [ ] Criar endpoint de atualizar
-- [ ] Criar endpoint de deletar
-- [ ] Acrescentar logs de cenários felizes
-- [ ] Criar tratamento de exceptions
-- [ ] Acrescentar logs de cenários com falhas
-- [ ] Configurar arquivo logback
+- [x] Criar endpoint de deletar
+- [x] Acrescentar logs de cenários felizes
+- [x] Criar tratamento de exceptions
+- [x] Acrescentar logs de cenários com falhas
+- [x] Configurar arquivo logback
 - [ ] Configurar Prometheus
 - [ ] Criar docker-compose com container de Grafana
 - [ ] Adicionar métricas de JVM
