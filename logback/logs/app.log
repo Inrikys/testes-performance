@@ -1,0 +1,93 @@
+2024-09-17 21:38:56 INFO  [main] c.t.exemplo.ExemploApplication - Starting ExemploApplication using Java 19.0.2 with PID 10836 (C:\workspace\testes-performance\target\classes started by henri in C:\workspace\testes-performance)
+2024-09-17 21:38:56 DEBUG [main] c.t.exemplo.ExemploApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-17 21:38:56 INFO  [main] c.t.exemplo.ExemploApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 21:39:05 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:39:05 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-17 21:39:05 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 21:39:05 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-17 21:39:05 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-17 21:39:06 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-09-17 21:39:06 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-17 21:39:11 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 21:39:13 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:39:14 INFO  [main] c.t.exemplo.ExemploApplication - Started ExemploApplication in 19.067 seconds (process running for 20.706)
+2024-09-17 21:45:33 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 21:45:53 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-17 21:45:53 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-17 21:47:03 INFO  [main] c.t.exemplo.ExemploApplication - Starting ExemploApplication using Java 19.0.2 with PID 14968 (C:\workspace\testes-performance\target\classes started by henri in C:\workspace\testes-performance)
+2024-09-17 21:47:03 DEBUG [main] c.t.exemplo.ExemploApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-17 21:47:03 INFO  [main] c.t.exemplo.ExemploApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 21:47:07 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:47:07 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-17 21:47:07 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 21:47:07 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-17 21:47:07 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-17 21:47:08 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-09-17 21:47:08 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-17 21:47:11 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 21:47:12 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:47:12 INFO  [main] c.t.exemplo.ExemploApplication - Started ExemploApplication in 10.633 seconds (process running for 11.623)
+2024-09-17 21:47:14 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 21:51:41 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-17 21:51:41 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-17 21:51:47 INFO  [main] c.t.exemplo.ExemploApplication - Starting ExemploApplication using Java 19.0.2 with PID 22144 (C:\workspace\testes-performance\target\classes started by henri in C:\workspace\testes-performance)
+2024-09-17 21:51:47 DEBUG [main] c.t.exemplo.ExemploApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-17 21:51:47 INFO  [main] c.t.exemplo.ExemploApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 21:51:51 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:51:51 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-17 21:51:51 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 21:51:51 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-17 21:51:52 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-17 21:51:52 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-09-17 21:51:52 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-17 21:51:56 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 21:51:57 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:51:58 INFO  [main] c.t.exemplo.ExemploApplication - Started ExemploApplication in 11.527 seconds (process running for 12.425)
+2024-09-17 21:51:58 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 21:52:40 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-17 21:52:40 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-17 21:52:44 INFO  [main] c.t.exemplo.ExemploApplication - Starting ExemploApplication using Java 19.0.2 with PID 11000 (C:\workspace\testes-performance\target\classes started by henri in C:\workspace\testes-performance)
+2024-09-17 21:52:44 DEBUG [main] c.t.exemplo.ExemploApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-17 21:52:44 INFO  [main] c.t.exemplo.ExemploApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 21:52:47 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:52:47 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-17 21:52:47 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 21:52:47 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-17 21:52:48 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-17 21:52:48 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-09-17 21:52:48 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-17 21:52:51 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 21:52:53 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:52:53 INFO  [main] c.t.exemplo.ExemploApplication - Started ExemploApplication in 10.114 seconds (process running for 10.976)
+2024-09-17 21:53:29 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-17 21:53:29 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-17 21:53:34 INFO  [main] c.t.exemplo.ExemploApplication - Starting ExemploApplication using Java 19.0.2 with PID 2664 (C:\workspace\testes-performance\target\classes started by henri in C:\workspace\testes-performance)
+2024-09-17 21:53:34 DEBUG [main] c.t.exemplo.ExemploApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-17 21:53:34 INFO  [main] c.t.exemplo.ExemploApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 21:53:39 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:53:39 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-17 21:53:39 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 21:53:40 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-17 21:53:40 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-17 21:53:41 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-09-17 21:53:41 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-17 21:53:44 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 21:53:46 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:53:47 INFO  [main] c.t.exemplo.ExemploApplication - Started ExemploApplication in 13.811 seconds (process running for 14.972)
+2024-09-17 21:53:47 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-17 21:55:37 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-17 21:55:37 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-17 21:55:52 INFO  [main] c.t.exemplo.ExemploApplication - Starting ExemploApplication using Java 19.0.2 with PID 852 (C:\workspace\testes-performance\target\classes started by henri in C:\workspace\testes-performance)
+2024-09-17 21:55:52 DEBUG [main] c.t.exemplo.ExemploApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2024-09-17 21:55:52 INFO  [main] c.t.exemplo.ExemploApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-17 21:55:56 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:55:56 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-17 21:55:56 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-17 21:55:56 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-17 21:55:57 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-17 21:55:57 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-09-17 21:55:57 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-17 21:56:01 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-17 21:56:03 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-09-17 21:56:03 INFO  [main] c.t.exemplo.ExemploApplication - Started ExemploApplication in 12.48 seconds (process running for 13.396)
+2024-09-17 21:56:03 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
