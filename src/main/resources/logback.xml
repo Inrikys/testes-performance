@@ -1,5 +1,5 @@
 <configuration>
-    <!-- Define o padrão de layout para os logs -->
+    <!-- Appender para arquivo -->
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
         <file>logback/logs/app.log</file>
         <append>true</append> <!-- Mantém logs anteriores e adiciona novos logs -->
@@ -8,29 +8,29 @@
         </encoder>
     </appender>
 
-    <!-- Logger raiz configurado com nível INFO e appender FILE -->
-    <root level="INFO">
-        <appender-ref ref="FILE" />
-    </root>
-
-    <!-- Logger específico para pacotes com nível DEBUG -->
-    <logger name="com.testesperformance.exemplo" level="DEBUG" additivity="false">
-        <appender-ref ref="FILE" />
-    </logger>
-
-    <!-- Logger para frameworks e bibliotecas com nível WARN -->
-    <logger name="org.springframework" level="WARN" />
-    <logger name="org.hibernate" level="WARN" />
-
-    <!-- Configuração para evitar logs redundantes -->
+    <!-- Appender para console -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%yellow(%d{ISO8601}) %highlight(%-5level) [%blue(%thread)] %red(%logger{36}) - %msg%n%throwable</pattern>
         </encoder>
     </appender>
 
-    <!-- Logger raiz configurado para também registrar no console -->
+    <!-- Logger específico para pacotes com nível DEBUG -->
+    <logger name="com.testesperformance.exemplo" level="DEBUG" additivity="false">
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <logger name="com.testesperformance.exemplo" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <!-- Logger para frameworks e bibliotecas com nível WARN -->
+    <logger name="org.springframework" level="WARN" />
+    <logger name="org.hibernate" level="WARN" />
+
+    <!-- Logger raiz configurado para registrar no arquivo e no console -->
     <root level="INFO">
+        <appender-ref ref="FILE" />
         <appender-ref ref="STDOUT" />
     </root>
 </configuration>
