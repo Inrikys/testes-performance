@@ -5,7 +5,6 @@ import com.testesperformance.exemplo.config.mock.NotMockExternalServicesConditio
 import org.springframework.context.annotation.Conditional;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-@Conditional(NotMockExternalServicesCondition.class)
 public interface ZupperRepository extends JpaRepository<ZupperEntity, Long> {
 
     boolean existsByEmail(String email);

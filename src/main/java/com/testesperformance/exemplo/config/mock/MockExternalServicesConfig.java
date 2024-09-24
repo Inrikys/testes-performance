@@ -31,29 +31,29 @@ public class MockExternalServicesConfig {
         return mock;
     }
 
-    @Bean
-    @Conditional(MockExternalServicesCondition.class)
-    public ProducerFactory producerFactory() {
-        return Mockito.mock(ProducerFactory.class);
-    }
-
-    @Bean
-    @Conditional(MockExternalServicesCondition.class)
-    public KafkaTemplate kafkaTemplate() {
-        return Mockito.mock(KafkaTemplate.class);
-    }
-
-    @Bean
-    @Conditional(MockExternalServicesCondition.class)
-    public ZupperRepository zupperRepository() throws IOException {
-
-        ZupperRepository mock = Mockito.mock(ZupperRepository.class);
-
-        ZupperEntity responseMock = JsonMockHelper.readJsonFromFile("zupperEntity.json", ZupperEntity.class);
-
-        Mockito.when(mock.existsByEmail(Mockito.anyString())).thenReturn(false);
-        Mockito.when(mock.save(any(ZupperEntity.class))).thenReturn(responseMock);
-
-        return mock;
-    }
+//    @Bean
+//    @Conditional(MockExternalServicesCondition.class)
+//    public ProducerFactory producerFactory() {
+//        return Mockito.mock(ProducerFactory.class);
+//    }
+//
+//    @Bean
+//    @Conditional(MockExternalServicesCondition.class)
+//    public KafkaTemplate kafkaTemplate() {
+//        return Mockito.mock(KafkaTemplate.class);
+//    }
+//
+//    @Bean
+//    @Conditional(MockExternalServicesCondition.class)
+//    public ZupperRepository zupperRepository() throws IOException {
+//
+//        ZupperRepository mock = Mockito.mock(ZupperRepository.class);
+//
+//        ZupperEntity responseMock = JsonMockHelper.readJsonFromFile("zupperEntity.json", ZupperEntity.class);
+//
+//        Mockito.when(mock.existsByEmail(Mockito.anyString())).thenReturn(false);
+//        Mockito.when(mock.save(any(ZupperEntity.class))).thenReturn(responseMock);
+//
+//        return mock;
+//    }
 }
