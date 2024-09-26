@@ -50,7 +50,6 @@ public class ReceberConfirmacaoPocTest {
         // simulation consumer
         Map<String, Object> producerProps = KafkaTestUtils.producerProps(embeddedKafkaBroker.getBrokersAsString());
 
-
         Producer<String, ZupperRegistradoMessage> producerTest = new KafkaProducer(producerProps, new StringSerializer(), new JsonSerializer<ZupperRegistradoMessage>());
         // Or
         // ProducerFactory producerFactory = new DefaultKafkaProducerFactory<String, ExampleDTO>(producerProps, new StringSerializer(), new JsonSerializer<ExampleDTO>());
