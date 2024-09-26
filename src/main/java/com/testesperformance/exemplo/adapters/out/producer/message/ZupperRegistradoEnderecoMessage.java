@@ -2,6 +2,7 @@ package com.testesperformance.exemplo.adapters.out.producer.message;
 
 import com.testesperformance.exemplo.application.domain.Endereco;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +11,7 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class ZupperRegistradoEnderecoMessage implements Serializable {
 
     private String cep;

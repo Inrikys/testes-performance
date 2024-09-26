@@ -2,6 +2,7 @@ package com.testesperformance.exemplo.adapters.out.producer.message;
 
 import com.testesperformance.exemplo.application.domain.Zupper;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -9,8 +10,8 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 @Getter
-@NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class ZupperRegistradoMessage implements Serializable {
 
     private Long id;
@@ -20,6 +21,9 @@ public class ZupperRegistradoMessage implements Serializable {
     private String celular;
     private ZupperRegistradoEnderecoMessage endereco;
     private String email;
+
+    public ZupperRegistradoMessage() {
+    }
 
     public ZupperRegistradoMessage(Zupper zupper) {
         this.id = zupper.getId();
