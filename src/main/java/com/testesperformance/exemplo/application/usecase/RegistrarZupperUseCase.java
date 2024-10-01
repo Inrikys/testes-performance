@@ -39,7 +39,7 @@ public class RegistrarZupperUseCase implements RegistrarZupperInputPort {
 
         Zupper zupperRegistrado = this.registrarZupperOutputPort.registrar(novoZupper);
 
-        this.notificarNovoZupperOutputPort.notificar(zupperRegistrado);
+//        this.notificarNovoZupperOutputPort.notificar(zupperRegistrado);
 
         return zupperRegistrado;
     }

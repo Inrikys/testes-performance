@@ -21,7 +21,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.time.LocalDate;
 import java.util.Map;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -42,31 +44,21 @@ public class ReceberConfirmacaoPocTest {
      * @link ref -> https://github.com/Kevded/integration-test-spring-kafka-with-embedded-kafka-consumer-and-producer/blob/master/src/test/java/com/example/integrationtestspringkafka/service/ConsumerServiceIntegrationTest.java
      */
     @Test
-    public void itShould_ConsumeCorrectExampleDTO_from_TOPIC_EXAMPLE_and_should_saveCorrectExampleEntity() throws ExecutionException, InterruptedException {
+    public void receberMensagem_QuandoProducerEnviarMensagem_DeveReceberMensagemEProcessar() throws ExecutionException, InterruptedException {
         // GIVEN
-
         ZupperRegistradoMessage exampleDTO = this.getMock();
 
         // simulation consumer
         Map<String, Object> producerProps = KafkaTestUtils.producerProps(embeddedKafkaBroker.getBrokersAsString());
 
         Producer<String, ZupperRegistradoMessage> producerTest = new KafkaProducer(producerProps, new StringSerializer(), new JsonSerializer<ZupperRegistradoMessage>());
-        // Or
-        // ProducerFactory producerFactory = new DefaultKafkaProducerFactory<String, ExampleDTO>(producerProps, new StringSerializer(), new JsonSerializer<ExampleDTO>());
-        // Producer<String, ExampleDTO> producerTest = producerFactory.createProducer();
-        // Or
-        // ProducerRecord<String, ExampleDTO> producerRecord = new ProducerRecord<String, ExampleDTO>(TOPIC_EXAMPLE, "key", exampleDTO);
-        // KafkaTemplate<String, ExampleDTO> template = new KafkaTemplate<>(producerFactory);
-        // template.setDefaultTopic(TOPIC_EXAMPLE);
-        // template.send(producerRecord);
 
         // WHEN
         producerTest.send(new ProducerRecord(TOPICO, "", exampleDTO));
 
         // THEN
-        // we must have 1 entity inserted
-        // We cannot predict when the insertion into the database will occur. So we wait until the value is present. Thank to Awaitility.
-        Thread.sleep(60);
+        CountDownLatch latch = new CountDownLatch(1);
+        latch.await(60, TimeUnit.SECONDS);
 
 //        var exampleEntityList = zupperRepository.findAll();
 //        assertEquals(1, exampleEntityList.size());
