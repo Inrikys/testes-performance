@@ -9,7 +9,31 @@
 - [x] Criar tratamento de exceptions
 - [x] Acrescentar logs de cenários com falhas
 - [x] Configurar arquivo logback
-- [ ] Rodar testes de performance e verificar saúde da JVM
+- [x] Rodar testes de performance e verificar saúde da JVM
+
+# Arquivo do Jmeter
+
+Para ajudar a cumprir o objetivo dos testes, rodar aplicação
+com memória programada.
+
+java -Xms100m -Xmx200m -XX:MaxMetaspaceSize=1024m -jar exemplo-0.0.1-SNAPSHOT.jar
+
+- [x] Teste de Carga
+
+Requisito funcional: Em horário de pico, o sistema deve aguentar pelo menos 150 utilizadores simultâneos no endpoint de buscar zuppers  
+O Teste foi feito com 200 utilizadores simultâneos, acompanhando o gerenciamento de memória via VisualVM.
+
+
+- [x] Teste de Estresse
+
+Foi testado que acima de 2800 utilizadores pode acontecer Memory Leaks
+
+
+- [ ] Teste de Picos
+- [ ] Teste de Endurance
+- [ ] Teste de Volume
+
+
 
 # Objetivos complementares
 obs: estou com problemas para configurar docker, então por enquanto vou testar usando visualVM
